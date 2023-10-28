@@ -10,19 +10,20 @@
 
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #d0d4d5;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
   border-radius: 12px;
   transition: all 0.3s ease;
+  background-color: #626875;
+  background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
+  background: #727474;
 }
 
 /* Pre Code*/
@@ -136,6 +137,7 @@ main{
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     border: none;
+    transition: all 80ms ease 0s;
 }
 
 .main-left button:hover{
@@ -147,23 +149,65 @@ main{
 .main-right{
     width: 60%;
     height: 100%;
-    background-color:crimson ;
+    position: relative;
+    padding: 5vw 3vw;
+    overflow-x: auto;
+    white-space: nowrap;
+        /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
 }
 
 .right-boxes{
-    height: 28vw;
-    width: 23vw;
+    height: 32vw;
+    width: 20vw;
     background-color: #fff;
     position: relative;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    display: inline-block;
+    margin-right: 2vw;
+    transition: all 90ms ease 0s;
 }
+
+.right-boxes:hover{
+    transform: scale(1.03);
+}
+
 .right-boxes img{
-    height: 100%;
+    height: 70%;
     width: 100%;
+    position: absolute;
+    top: 1%;
+    z-index: 0;
     object-fit: cover;
 }
 .right-boxes h5{
-    z-index: 999;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-size: 1vw;
+    background-color: #000;
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-bottom-right-radius: 0px;
 }
+.right-boxes h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2vw;
+    background-color: #d0d4d5;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-top-left-radius: 8px;
+}
+
+
+
+
 
 
 
